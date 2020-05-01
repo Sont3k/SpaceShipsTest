@@ -12,14 +12,14 @@ namespace Assets.Scripts
         [Header("Light Weapon")]
         [SerializeField] private LightWeapon _lightWeapon_1;
         [SerializeField] private LightWeapon _lightWeapon_2;
-        
+
         [Header("Medium Weapon")]
         [SerializeField] private MediumWeapon _mediumWeapon;
 
         [Header("Heavy Weapon")]
         [SerializeField] private HeavyWeapon _heavyWeapon;
 
-        
+        // Weapon properties
         public LightWeapon LightWeapon_1 { get => _lightWeapon_1; set { _lightWeapon_1 = value; } }
         public LightWeapon LightWeapon_2 { get => _lightWeapon_2; set { _lightWeapon_2 = value; } }
         public MediumWeapon MediumWeapon { get => _mediumWeapon; set { _mediumWeapon = value; } }
@@ -38,7 +38,20 @@ namespace Assets.Scripts
         // Update is called once per frame
         void Update()
         {
-            // Debug.Log("Something");
+            Lifecyclehook();
+        }
+
+        void Lifecyclehook()
+        {
+            if(Health <= 0)
+            {
+                DestroySpaceship();
+            }
+        }
+
+        void DestroySpaceship()
+        {
+            SendMessage("DestroyObject", gameObject);
         }
     }
 }
