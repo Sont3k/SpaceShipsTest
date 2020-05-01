@@ -9,7 +9,7 @@ namespace Assets.Scripts.Interfaces
 {
     public interface ISpaceship
     {
-        LightWeapon Lweapon_1 { get; set; }
-        LightWeapon Lweapon_2 { get; set; }
+        LightWeapon LightWeapon_1 { get; set; }
+        LightWeapon LightWeapon_2 { get; set; }
     }
 }

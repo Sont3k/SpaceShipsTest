@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Assets.Scripts.Weapons
 {
-    public class MediumWeapon : IWeapon
+    public class MediumWeapon : MonoBehaviour, IWeapon
     {
         public int Health { get; set; }
 

@@ -3,9 +3,10 @@ using UnityEngine;
 
 namespace Assets.Scripts.Weapons
 {
-    public class LightWeapon : IWeapon
+    public class LightWeapon : MonoBehaviour, IWeapon
     {
-        public int Health { get; set; }
+        private int _health;
+        public int Health { get => _health; set { _health = value; } }
 
         public void Shoot()
         {
