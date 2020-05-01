@@ -6,7 +6,7 @@ namespace Assets.Scripts.SlotModules.MediumSlotModules
 {
     public class DoubleMachineGun : MediumSlot
     {
-        public override int Health { get; set; }
+        public override int Health { get; set; } = 20;
         public int Barrel { get; set; } = 2;
         private readonly IGunParticles _bullets;
 
@@ -26,7 +26,7 @@ namespace Assets.Scripts.SlotModules.MediumSlotModules
             }
             else
             {
-                Debug.Log("Can't shoot from machine gun, it's broken.");
+                Debug.Log("Can't shoot from double machine gun, it's broken.");
             }
         }
     }

@@ -6,7 +6,7 @@ namespace Assets.Scripts.SlotModules.LightSlotModules
 {
     public class MachineGun : LightSlot
     {
-        public override int Health { get; set; }
+        public override int Health { get; set; } = 10;
         public int Barrel { get; set; } = 1;
         private readonly IGunParticles _bullets;
 
