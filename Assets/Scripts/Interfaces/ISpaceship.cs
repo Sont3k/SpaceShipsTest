@@ -9,6 +9,8 @@ namespace Assets.Scripts.Interfaces
 {
     public interface ISpaceship
     {
+        int Health { get; set; }
+        
         LightWeapon LightWeapon_1 { get; set; }
         LightWeapon LightWeapon_2 { get; set; }
     }
