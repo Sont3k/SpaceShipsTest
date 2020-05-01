@@ -9,7 +9,14 @@ namespace Assets.Scripts.Weapons
 
         public void Shoot()
         {
-            Debug.Log("Shooting from medium weapon");
+            if(Health > 0)
+            {
+                Debug.Log("Shooting from medium weapon.");
+            }
+            else
+            {
+                Debug.Log("Can't shoot from medium weapon, it's broken.");
+            }
         }
     }
 }

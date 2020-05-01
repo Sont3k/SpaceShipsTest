@@ -5,12 +5,18 @@ namespace Assets.Scripts.Weapons
 {
     public class LightWeapon : MonoBehaviour, IWeapon
     {
-        private int _health;
-        public int Health { get => _health; set { _health = value; } }
+        public int Health { get; set; }
 
         public void Shoot()
         {
-            Debug.Log("Shooting from light weapon");
+            if(Health > 0)
+            {
+                Debug.Log("Shooting from light weapon.");
+            }
+            else
+            {
+                Debug.Log("Can't shoot from light weapon, it's broken.");
+            }
         }
     }
 }

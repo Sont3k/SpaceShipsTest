@@ -9,7 +9,14 @@ namespace Assets.Scripts.Weapons
 
         public void Shoot()
         {
-            Debug.Log("Shooting from heavy weapon");
+            if(Health > 0)
+            {
+                Debug.Log("Shooting from heavy weapon.");
+            }
+            else
+            {
+                Debug.Log("Can't shoot from heavy weapon, it's broken.");
+            }
         }
     }
 }
