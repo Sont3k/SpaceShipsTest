@@ -1,12 +1,11 @@
 ﻿using Assets.Scripts.Interfaces;
-using Assets.Scripts.Weapons;
+using Assets.Scripts.Slots;
 using UnityEngine;
 
 namespace Assets.Scripts
 {
     public class Spaceship : MonoBehaviour, ISpaceship
     {
-        
         [Header("Light Slots")]
         [SerializeField] private LightSlot _lightSlot_1;
         [SerializeField] private LightSlot _lightSlot_2;

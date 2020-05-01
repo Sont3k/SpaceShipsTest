@@ -1,7 +1,7 @@
 ﻿using Assets.Scripts.Interfaces;
 using UnityEngine;
 
-namespace Assets.Scripts.Weapons
+namespace Assets.Scripts.Slots
 {
     public class MediumSlot : MonoBehaviour, ISlot
     {

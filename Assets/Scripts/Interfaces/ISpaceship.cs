@@ -1,4 +1,4 @@
-﻿using Assets.Scripts.Weapons;
+﻿using Assets.Scripts.Slots;
 
 namespace Assets.Scripts.Interfaces
 {
