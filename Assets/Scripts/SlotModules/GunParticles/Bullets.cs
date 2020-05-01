@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Assets.Scripts.SlotModules.GunParticles
 {
-    public class Bullets : IGunParticles
+    public class Bullets : MonoBehaviour, IGunParticles
     {
         [SerializeField] private float _damage = 50;
         [SerializeField] private float _range = 250;
