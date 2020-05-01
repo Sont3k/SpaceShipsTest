@@ -6,6 +6,8 @@ namespace Assets.Scripts.SlotModules
 {
     public class MachineGun : LightSlot
     {
+        public override int Health { get; set; }
+        public int Barrel { get; set; } = 1;
         private readonly IGunParticles _bullets;
 
         public MachineGun(IGunParticles bullets)
@@ -13,13 +15,14 @@ namespace Assets.Scripts.SlotModules
             _bullets = bullets;
         }
 
-        public override int Health { get; set; }
-
         public override void Action()
         {
             if (Health > 0)
             {
-                Debug.Log("MachineGun is shooting.");
+                for(int i = 0; i < Barrel; i++)
+                {
+                    Debug.Log("MachineGun is shooting.");
+                }
             }
             else
             {
