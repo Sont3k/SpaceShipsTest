@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public interface IWeapon
+namespace Assets.Scripts.Interfaces
 {
+    public interface IEquipment
+    {
+    }
 }

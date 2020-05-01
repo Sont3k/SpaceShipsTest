@@ -2,7 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public interface IBullets
+namespace Assets.Scripts.Interfaces
 {
-    
+    public interface IBullets
+    {
+
+    }
 }
