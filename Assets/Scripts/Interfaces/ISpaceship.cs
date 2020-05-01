@@ -1,9 +1,5 @@
 ﻿using Assets.Scripts.Weapons;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using SpaceshipsTest.Assets.Scripts.Equipment;
 
 namespace Assets.Scripts.Interfaces
 {
@@ -13,5 +9,7 @@ namespace Assets.Scripts.Interfaces
         
         LightWeapon LightWeapon_1 { get; set; }
         LightWeapon LightWeapon_2 { get; set; }
+
+        Scanner Scanner { get; set; }
     }
 }

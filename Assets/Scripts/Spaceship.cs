@@ -1,5 +1,6 @@
 ﻿using Assets.Scripts.Interfaces;
 using Assets.Scripts.Weapons;
+using SpaceshipsTest.Assets.Scripts.Equipment;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -19,11 +20,17 @@ namespace Assets.Scripts
         [Header("Heavy Weapon")]
         [SerializeField] private HeavyWeapon _heavyWeapon;
 
+        [Header("Equipment")]
+        [SerializeField] private Scanner _scanner;
+
         // Weapon properties
         public LightWeapon LightWeapon_1 { get => _lightWeapon_1; set { _lightWeapon_1 = value; } }
         public LightWeapon LightWeapon_2 { get => _lightWeapon_2; set { _lightWeapon_2 = value; } }
         public MediumWeapon MediumWeapon { get => _mediumWeapon; set { _mediumWeapon = value; } }
         public HeavyWeapon HeavyWeapon { get => _heavyWeapon; set { _heavyWeapon = value; } }
+
+        // Equipment properties
+        public Scanner Scanner { get => _scanner; set { _scanner = value; } }
 
         [Header("Health")]
         [SerializeField] private int _health;
