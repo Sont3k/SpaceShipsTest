@@ -2,7 +2,7 @@ using Assets.Scripts.Interfaces;
 using Assets.Scripts.Slots;
 using UnityEngine;
 
-namespace Assets.Scripts.SlotModules
+namespace Assets.Scripts.SlotModules.LightSlotModules
 {
     public class MachineGun : LightSlot
     {
@@ -19,10 +19,7 @@ namespace Assets.Scripts.SlotModules
         {
             if (Health > 0)
             {
-                for(int i = 0; i < Barrel; i++)
-                {
-                    Debug.Log("MachineGun is shooting.");
-                }
+                Debug.Log("MachineGun is shooting.");
             }
             else
             {
