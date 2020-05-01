@@ -1,6 +1,6 @@
 using Assets.Scripts.Interfaces;
 
-namespace SpaceshipsTest.Assets.Scripts.SlotModules.GunParticles
+namespace Assets.Scripts.SlotModules.GunParticles
 {
     public class Bullets : IGunParticles
     {

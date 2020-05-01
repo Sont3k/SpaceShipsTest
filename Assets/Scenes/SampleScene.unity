@@ -195,11 +195,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4afef41146ed67c42950f2a646a6b0ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _lightWeapon_1: {fileID: 0}
-  _lightWeapon_2: {fileID: 0}
-  _mediumWeapon: {fileID: 0}
-  _heavyWeapon: {fileID: 0}
-  _health: 5
+  _lightSlot_1: {fileID: 0}
+  _lightSlot_2: {fileID: 0}
+  _mediumSlot: {fileID: 0}
+  _heavySlot: {fileID: 0}
+  _health: 1
 --- !u!114 &649715160
 MonoBehaviour:
   m_ObjectHideFlags: 0
