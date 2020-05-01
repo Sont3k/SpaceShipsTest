@@ -4,10 +4,10 @@ using UnityEngine;
 
 namespace Assets.Scripts.Interfaces
 {
-    public interface IEquipment
+    public interface ISlot
     {
         int Health { get; set; }
 
-        void Use();
+        void Action();
     }
 }

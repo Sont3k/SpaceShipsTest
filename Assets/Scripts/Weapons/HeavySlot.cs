@@ -3,19 +3,19 @@ using UnityEngine;
 
 namespace Assets.Scripts.Weapons
 {
-    public class MediumWeapon : MonoBehaviour, IWeapon
+    public class HeavySlot : MonoBehaviour, ISlot
     {
         public int Health { get; set; }
 
-        public void Shoot()
+        public void Action()
         {
             if(Health > 0)
             {
-                Debug.Log("Shooting from medium weapon.");
+                Debug.Log("Shooting from heavy weapon.");
             }
             else
             {
-                Debug.Log("Can't shoot from medium weapon, it's broken.");
+                Debug.Log("Can't shoot from heavy weapon, it's broken.");
             }
         }
     }

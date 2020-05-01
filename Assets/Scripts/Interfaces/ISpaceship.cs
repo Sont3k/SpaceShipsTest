@@ -1,5 +1,4 @@
 ﻿using Assets.Scripts.Weapons;
-using SpaceshipsTest.Assets.Scripts.Equipment;
 
 namespace Assets.Scripts.Interfaces
 {
@@ -7,9 +6,7 @@ namespace Assets.Scripts.Interfaces
     {
         int Health { get; set; }
         
-        LightWeapon LightWeapon_1 { get; set; }
-        LightWeapon LightWeapon_2 { get; set; }
-
-        Scanner Scanner { get; set; }
+        LightSlot LightSlot_1 { get; set; }
+        LightSlot LightSlot_2 { get; set; }
     }
 }

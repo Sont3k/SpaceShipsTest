@@ -1,8 +1,5 @@
 ﻿using Assets.Scripts.Interfaces;
 using Assets.Scripts.Weapons;
-using SpaceshipsTest.Assets.Scripts.Equipment;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 namespace Assets.Scripts
@@ -10,37 +7,25 @@ namespace Assets.Scripts
     public class Spaceship : MonoBehaviour, ISpaceship
     {
         
-        [Header("Light Weapon")]
-        [SerializeField] private LightWeapon _lightWeapon_1;
-        [SerializeField] private LightWeapon _lightWeapon_2;
+        [Header("Light Slots")]
+        [SerializeField] private LightSlot _lightSlot_1;
+        [SerializeField] private LightSlot _lightSlot_2;
 
-        [Header("Medium Weapon")]
-        [SerializeField] private MediumWeapon _mediumWeapon;
+        [Header("Medium Slots")]
+        [SerializeField] private MediumSlot _mediumSlot;
 
-        [Header("Heavy Weapon")]
-        [SerializeField] private HeavyWeapon _heavyWeapon;
-
-        [Header("Equipment")]
-        [SerializeField] private Scanner _scanner;
+        [Header("Heavy Slots")]
+        [SerializeField] private HeavySlot _heavySlot;
 
         // Weapon properties
-        public LightWeapon LightWeapon_1 { get => _lightWeapon_1; set { _lightWeapon_1 = value; } }
-        public LightWeapon LightWeapon_2 { get => _lightWeapon_2; set { _lightWeapon_2 = value; } }
-        public MediumWeapon MediumWeapon { get => _mediumWeapon; set { _mediumWeapon = value; } }
-        public HeavyWeapon HeavyWeapon { get => _heavyWeapon; set { _heavyWeapon = value; } }
-
-        // Equipment properties
-        public Scanner Scanner { get => _scanner; set { _scanner = value; } }
+        public LightSlot LightSlot_1 { get => _lightSlot_1; set { _lightSlot_1 = value; } }
+        public LightSlot LightSlot_2 { get => _lightSlot_2; set { _lightSlot_2 = value; } }
+        public MediumSlot MediumSlot { get => _mediumSlot; set { _mediumSlot = value; } }
+        public HeavySlot HeavySlot { get => _heavySlot; set { _heavySlot = value; } }
 
         [Header("Health")]
         [SerializeField] private int _health;
         public int Health { get => _health; set { _health = value; } }
-
-        // Start is called before the first frame update
-        void Start()
-        {
-
-        }
 
         // Update is called once per frame
         void Update()

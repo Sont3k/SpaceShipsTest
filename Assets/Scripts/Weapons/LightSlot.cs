@@ -3,11 +3,11 @@ using UnityEngine;
 
 namespace Assets.Scripts.Weapons
 {
-    public class LightWeapon : MonoBehaviour, IWeapon
+    public class LightSlot : MonoBehaviour, ISlot
     {
         public int Health { get; set; }
 
-        public void Shoot()
+        public void Action()
         {
             if(Health > 0)
             {
