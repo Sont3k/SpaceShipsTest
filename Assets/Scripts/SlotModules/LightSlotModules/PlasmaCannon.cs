@@ -9,6 +9,11 @@ namespace Assets.Scripts.SlotModules.LightSlotModules
     {
         public override int Health { get; set; } = 10;
         public int Barrels { get; set; } = 1;
+        public int Damage { get; set; } = 100;
+        public int Rapidity { get; set; } = 10;
+        public int Clip { get; set; } = 30;
+        public float ClipReloadTime { get; set; } = 20.2f;
+
         private readonly Plasma _plasma;
 
         public PlasmaCannon(Plasma plasma)

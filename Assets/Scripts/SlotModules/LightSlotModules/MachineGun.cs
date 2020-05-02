@@ -9,6 +9,11 @@ namespace Assets.Scripts.SlotModules.LightSlotModules
     {
         public override int Health { get; set; } = 10;
         public int Barrels { get; set; } = 1;
+        public int Damage { get; set; } = 50;
+        public int Rapidity { get; set; } = 30;
+        public int Clip { get; set; } = 70;
+        public float ClipReloadTime { get; set; } = 15.4f;
+
         private readonly Bullets _bullets;
 
         public MachineGun(Bullets bullets)

@@ -9,6 +9,10 @@ namespace Assets.Scripts.SlotModules.MediumSlotModules
     {
         public override int Health { get; set; } = 20;
         public int Barrels { get; set; } = 2;
+        public int Damage { get; set; } = 200;
+        public int Rapidity { get; set; } = 20;
+        public int Clip { get; set; } = 60;
+        public float ClipReloadTime { get; set; } = 40.4f;
 
         private readonly Plasma _plasma;
 

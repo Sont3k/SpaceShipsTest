@@ -10,6 +10,10 @@ namespace Assets.Scripts.SlotModules.HeavySlotModules
     {
         public override int Health { get; set; } = 50;
         public int Barrels { get; set; } = 4;
+        public int Damage { get; set; } = 250;
+        public int Rapidity { get; set; } = 40;
+        public int Clip { get; set; } = 150;
+        public float ClipReloadTime { get; set; } = 30.2f;
 
         private DoubleMachineGun machineGun = new DoubleMachineGun(new Bullets());
         private DoublePlasmaCannon plasmaCannon = new DoublePlasmaCannon(new Plasma());

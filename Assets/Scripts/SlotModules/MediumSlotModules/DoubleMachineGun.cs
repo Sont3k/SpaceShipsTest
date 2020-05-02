@@ -9,6 +9,11 @@ namespace Assets.Scripts.SlotModules.MediumSlotModules
     {
         public override int Health { get; set; } = 20;
         public int Barrels { get; set; } = 2;
+        public int Damage { get; set; } = 100;
+        public int Rapidity { get; set; } = 60;
+        public int Clip { get; set; } = 140;
+        public float ClipReloadTime { get; set; } = 30.8f;
+
         private readonly Bullets _bullets;
 
         public DoubleMachineGun(Bullets bullets)
