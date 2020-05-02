@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace SpaceshipsTest.Assets.Scripts
+namespace Assets.Scripts
 {
     public class Destroyer : MonoBehaviour
     {
