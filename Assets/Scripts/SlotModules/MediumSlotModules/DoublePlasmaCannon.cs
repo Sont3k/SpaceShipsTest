@@ -1,13 +1,14 @@
+using Assets.Scripts.Interfaces;
 using Assets.Scripts.SlotModules.GunParticles;
 using Assets.Scripts.Slots;
 using UnityEngine;
 
-namespace SpaceshipsTest.Assets.Scripts.SlotModules.MediumSlotModules
+namespace Assets.Scripts.SlotModules.MediumSlotModules
 {
-    public class DoublePlasmaCannon : MediumSlot
+    public class DoublePlasmaCannon : MediumSlot, IGuns
     {
         public override int Health { get; set; } = 20;
-        public int Barrel { get; set; } = 2;
+        public int Barrels { get; set; } = 2;
 
         private readonly Plasma _plasma;
 
@@ -20,7 +21,7 @@ namespace SpaceshipsTest.Assets.Scripts.SlotModules.MediumSlotModules
         {
             if (Health > 0)
             {
-                for(int i = 0; i < Barrel; i++)
+                for(int i = 0; i < Barrels; i++)
                 {
                     Debug.Log("Double plasma cannon is shooting.");
                 }
