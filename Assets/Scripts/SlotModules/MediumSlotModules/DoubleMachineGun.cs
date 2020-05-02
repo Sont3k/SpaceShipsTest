@@ -13,12 +13,26 @@ namespace Assets.Scripts.SlotModules.MediumSlotModules
         public int Rapidity { get; set; } = 60;
         public int Clip { get; set; } = 140;
         public float ClipReloadTime { get; set; } = 30.8f;
+        public override int Level { get; set; } = 1;
 
         private readonly Bullets _bullets;
 
         public DoubleMachineGun(Bullets bullets)
         {
             _bullets = bullets;
+        }
+
+        private void Start() {
+            InitLevel();
+        }
+
+        public override void InitLevel()
+        {
+            Health *= Level;
+            Damage *= Level;
+            Rapidity *= Level;
+            Clip *= Level;
+            ClipReloadTime *= Level;
         }
 
         public override void Action()

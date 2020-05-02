@@ -8,6 +8,17 @@ namespace Assets.Scripts.SlotModules.MediumSlotModules
     {
         public override int Health { get; set; } = 10;
         public int Throttle { get; set; } = 100;
+        public override int Level { get; set; } = 1;
+
+        private void Start() {
+            InitLevel();
+        }
+
+        public override void InitLevel()
+        {
+            Health *= Level;
+            Throttle *= Level;
+        }
 
         public override void Action()
         {

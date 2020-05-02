@@ -4,6 +4,8 @@
     {
         int Health { get; set; }
 
+        void InitLevel();
+
         void Action();
     }
 }

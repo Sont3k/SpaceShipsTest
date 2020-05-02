@@ -13,12 +13,26 @@ namespace Assets.Scripts.SlotModules.MediumSlotModules
         public int Rapidity { get; set; } = 20;
         public int Clip { get; set; } = 60;
         public float ClipReloadTime { get; set; } = 40.4f;
+        public override int Level { get; set; } = 1;
 
         private readonly Plasma _plasma;
 
         public DoublePlasmaCannon(Plasma plasma)
         {
             _plasma = plasma;
+        }
+
+        private void Start() {
+            InitLevel();
+        }
+
+        public override void InitLevel()
+        {
+            Health *= Level;
+            Damage *= Level;
+            Rapidity *= Level;
+            Clip *= Level;
+            ClipReloadTime *= Level;
         }
 
         public override void Action()

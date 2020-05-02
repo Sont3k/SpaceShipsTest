@@ -13,12 +13,26 @@ namespace Assets.Scripts.SlotModules.LightSlotModules
         public int Rapidity { get; set; } = 30;
         public int Clip { get; set; } = 70;
         public float ClipReloadTime { get; set; } = 15.4f;
+        public override int Level { get; set; } = 1;
 
         private readonly Bullets _bullets;
 
         public MachineGun(Bullets bullets)
         {
             _bullets = bullets;
+        }
+
+        private void Start() {
+            InitLevel();
+        }
+
+        public override void InitLevel()
+        {
+            Health *= Level;
+            Damage *= Level;
+            Rapidity *= Level;
+            Clip *= Level;
+            ClipReloadTime *= Level;
         }
 
         public override void Action()

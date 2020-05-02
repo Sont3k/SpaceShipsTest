@@ -14,6 +14,18 @@ namespace Assets.Scripts.SlotModules.HeavySlotModules
         private PlasmaCannon plasmaCannon = new PlasmaCannon(new Plasma());
         private EnergyShield energyShield = new EnergyShield();
 
+        public override int Level { get; set; } = 5;
+
+        private void Start() {
+            InitLevel();
+        }
+
+        public override void InitLevel()
+        {
+            Health *= Level;
+            // Here can be specification increasing for included objects
+        }
+
         public override void Action()
         {
             if (Health > 0)

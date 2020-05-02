@@ -14,9 +14,23 @@ namespace Assets.Scripts.SlotModules.HeavySlotModules
         public int Rapidity { get; set; } = 40;
         public int Clip { get; set; } = 150;
         public float ClipReloadTime { get; set; } = 30.2f;
+        public override int Level { get; set; } = 5;
 
         private DoubleMachineGun machineGun = new DoubleMachineGun(new Bullets());
         private DoublePlasmaCannon plasmaCannon = new DoublePlasmaCannon(new Plasma());
+
+        private void Start() {
+            InitLevel();
+        }
+
+        public override void InitLevel()
+        {
+            Health *= Level;
+            Damage *= Level;
+            Rapidity *= Level;
+            Clip *= Level;
+            ClipReloadTime *= Level;
+        }
 
         public override void Action()
         {

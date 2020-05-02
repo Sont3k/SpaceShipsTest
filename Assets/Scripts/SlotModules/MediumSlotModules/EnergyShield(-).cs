@@ -6,6 +6,16 @@ namespace Assets.Scripts.SlotModules.MediumSlotModules
     public class EnergyShield : MediumSlot
     {
         public override int Health { get; set; }
+        public override int Level { get; set; } = 1;
+
+        private void Start() {
+            InitLevel();
+        }
+
+        public override void InitLevel()
+        {
+            Health *= Level;
+        }
 
         public override void Action()
         {
