@@ -3,10 +3,10 @@ using UnityEngine;
 
 namespace Assets.Scripts.Slots
 {
-    public class LightSlot : MonoBehaviour, ISlot
+    public abstract class LightSlot : MonoBehaviour, ISlot
     {
-        public virtual int Health { get; set; }
+        public abstract int Health { get; set; }
 
-        public virtual void Action() {}
+        public abstract void Action();
     }
 }
