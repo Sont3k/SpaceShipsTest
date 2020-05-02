@@ -1,4 +1,4 @@
-using Assets.Scripts.Interfaces;
+using Assets.Scripts.SlotModules.GunParticles;
 using Assets.Scripts.Slots;
 using UnityEngine;
 
@@ -8,9 +8,9 @@ namespace Assets.Scripts.SlotModules.MediumSlotModules
     {
         public override int Health { get; set; } = 20;
         public int Barrel { get; set; } = 2;
-        private readonly IGunParticles _bullets;
+        private readonly Bullets _bullets;
 
-        public DoubleMachineGun(IGunParticles bullets)
+        public DoubleMachineGun(Bullets bullets)
         {
             _bullets = bullets;
         }
