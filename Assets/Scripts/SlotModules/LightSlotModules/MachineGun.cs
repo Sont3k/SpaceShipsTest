@@ -19,7 +19,7 @@ namespace Assets.Scripts.SlotModules.LightSlotModules
         {
             if (Health > 0)
             {
-                Debug.Log("MachineGun is shooting.");
+                Debug.Log("Machine gun is shooting.");
             }
             else
             {

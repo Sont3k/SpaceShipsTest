@@ -2,17 +2,18 @@ using Assets.Scripts.SlotModules.GunParticles;
 using Assets.Scripts.Slots;
 using UnityEngine;
 
-namespace Assets.Scripts.SlotModules.MediumSlotModules
+namespace SpaceshipsTest.Assets.Scripts.SlotModules.MediumSlotModules
 {
-    public class DoubleMachineGun : MediumSlot
+    public class DoublePlasmaCannon : MediumSlot
     {
         public override int Health { get; set; } = 20;
         public int Barrel { get; set; } = 2;
-        private readonly Bullets _bullets;
 
-        public DoubleMachineGun(Bullets bullets)
+        private readonly Plasma _plasma;
+
+        public DoublePlasmaCannon(Plasma plasma)
         {
-            _bullets = bullets;
+            _plasma = plasma;
         }
 
         public override void Action()
@@ -21,12 +22,12 @@ namespace Assets.Scripts.SlotModules.MediumSlotModules
             {
                 for(int i = 0; i < Barrel; i++)
                 {
-                    Debug.Log("Double machine gun is shooting.");
+                    Debug.Log("Double plasma cannon is shooting.");
                 }
             }
             else
             {
-                Debug.Log("Can't shoot from double machine gun, it's broken.");
+                Debug.Log("Can't shoot from double plasma cannon, it's broken.");
             }
         }
     }
