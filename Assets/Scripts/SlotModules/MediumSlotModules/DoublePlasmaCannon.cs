@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace Assets.Scripts.SlotModules.MediumSlotModules
 {
-    public class DoublePlasmaCannon : MediumSlot, IGuns
+    public class DoublePlasmaCannon : MediumSlot, IGun
     {
         public override int Health { get; set; } = 20;
         public int Barrels { get; set; } = 2;

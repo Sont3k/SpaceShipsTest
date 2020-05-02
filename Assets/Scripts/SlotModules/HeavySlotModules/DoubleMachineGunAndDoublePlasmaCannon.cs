@@ -6,7 +6,7 @@ using UnityEngine;
 
 namespace Assets.Scripts.SlotModules.HeavySlotModules
 {
-    public class DoubleMachineGunAndDoublePlasmaCannon : HeavySlot, IGuns
+    public class DoubleMachineGunAndDoublePlasmaCannon : HeavySlot, IGun
     {
         public override int Health { get; set; } = 50;
         public int Barrels { get; set; } = 4;

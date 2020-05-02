@@ -1,6 +1,6 @@
 namespace Assets.Scripts.Interfaces
 {
-    public interface IGuns
+    public interface IGun
     {
         int Barrels { get; set; }
     }

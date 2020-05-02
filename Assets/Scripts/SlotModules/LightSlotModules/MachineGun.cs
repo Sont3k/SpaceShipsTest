@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace Assets.Scripts.SlotModules.LightSlotModules
 {
-    public class MachineGun : LightSlot, IGuns
+    public class MachineGun : LightSlot, IGun
     {
         public override int Health { get; set; } = 10;
         public int Barrels { get; set; } = 1;
