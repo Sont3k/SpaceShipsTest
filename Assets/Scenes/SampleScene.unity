@@ -199,7 +199,8 @@ MonoBehaviour:
   _lightSlot_2: {fileID: 1760310109}
   _mediumSlot: {fileID: 0}
   _heavySlot: {fileID: 0}
-  _health: 0
+  _health: 2
+  _level: 1
 --- !u!114 &649715160
 MonoBehaviour:
   m_ObjectHideFlags: 0

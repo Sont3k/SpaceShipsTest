@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Assets.Scripts.SlotModules.MediumSlotModules
 {
-    public class EnergyShield : MediumSlot
+    public class HPRegenerator : MediumSlot
     {
         public override int Health { get; set; } = 50;
         public override int Level { get; set; } = 1;
@@ -21,11 +21,11 @@ namespace Assets.Scripts.SlotModules.MediumSlotModules
         {
             if (Health > 0)
             {
-                Debug.Log("Energy shield is on.");
+                Debug.Log("HP regenerator is on.");
             }
             else
             {
-                Debug.Log("Can't enable energy shield, it has no energy.");
+                Debug.Log("Can't enable HP regenerator, it has no energy.");
             }
         }
     }
