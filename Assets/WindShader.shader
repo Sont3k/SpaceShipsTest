@@ -11,10 +11,10 @@
         _WindStrength("Wind Strength", Range( 0, 2 )) = 0.3
         _WindGustDistance("Distance between gusts",Range(0.001,50)) = .25
         _WindDirection("Wind Direction", vector) = (1,0, 1,0)
-        
     }
     SubShader {
-        Tags { "Queue"="Transparent"
+        Tags { 
+            "Queue"="Transparent"
             "RenderType"="TransparentCutout"
         }
         LOD 200
@@ -55,7 +55,6 @@
             
             // takes the new modified position of the vert in world space and then puts it back in local space
             v.vertex = mul( unity_WorldToObject, worldSpaceVertex );
-            
         }
         
         void surf (Input IN, inout SurfaceOutputStandard o) {
@@ -68,7 +67,6 @@
             o.Alpha = c.a;
         }
         ENDCG
-        
     }
     FallBack "Diffuse"
 }
