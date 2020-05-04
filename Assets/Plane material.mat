@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Plane material
-  m_Shader: {fileID: 4800000, guid: 536b7640ef3832b4a8985b87bebca8d1, type: 3}
+  m_Shader: {fileID: 4800000, guid: 28d9224d2ece2e144abe01c1b0767204, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
